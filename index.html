@@ -17,14 +17,12 @@
 <body>
     <div class="main-container">
         <header>
-            <nav>
-                <img src="images/logo/Booki.png" alt="logo">
-                <div class="navbar-links">
-                    <ul>
-                        <li>Hébergement</li>
-                        <li>Activités</li>
-                    </ul>
-                </div>
+            <nav class="navbar">
+                <img class="logo" src="images/logo/Booki.png" alt="logo">
+                <ul class="navbar-links">
+                        <li><a id="home" href="#accommodation">Hébergement</a></li>
+                        <li><a id="activity" href="#activities">Activités</a></li>
+                </ul>
             </nav>
         </header>
         <main>
@@ -38,7 +36,7 @@
             </form>
 
             <h1>Filtres</h1>
-            <button>Economique</button>
+            <button>Économique</button>
             <button>Familial</button>
             <button>Nos pépites</button>
 
@@ -49,25 +47,25 @@
 
             <div>
                 <section>
-                    <h1>Hébergement à Marseille</h1>
+                    <h1 id="accommodation">Hébergement à Marseille</h1>
                     <div>
+                        <div>
                             <div>
-                                <div>
-                                    <img class="marseille-case-img-host" src="images/hebergements/fred-kleber.jpg"
-                                        alt="Auberge la Cannebière">
-                                </div>
-                                <div>
-                                    <h3 class="hotel-name">Hôtel du port</h3>
-                                    <p>Nuit à partir de <span class="price">52€</span></p>
-                                    <div class="stars">
-                                        <div class="fas fa-star hostingMainCardGradeIcon"></div>
-                                        <div class="fas fa-star hostingMainCardGradeIcon"></div>
-                                        <div class="fas fa-star hostingMainCardGradeIcon"></div>
-                                        <div class="fas fa-star hostingMainCardGradeIcon"></div>
-                                        <div class="fas fa-star hostingMainCardGradeIconEmpty"></div>
-                                    </div>
+                                <img class="marseille-case-img-host" src="images/hebergements/fred-kleber.jpg"
+                                    alt="Auberge la Cannebière">
+                            </div>
+                            <div>
+                                <h3 class="hotel-name">Hôtel du port</h3>
+                                <p>Nuit à partir de <span class="price">52€</span></p>
+                                <div class="stars">
+                                    <div class="fas fa-star hostingMainCardGradeIcon"></div>
+                                    <div class="fas fa-star hostingMainCardGradeIcon"></div>
+                                    <div class="fas fa-star hostingMainCardGradeIcon"></div>
+                                    <div class="fas fa-star hostingMainCardGradeIcon"></div>
+                                    <div class="fas fa-star hostingMainCardGradeIconEmpty"></div>
                                 </div>
                             </div>
+                        </div>
                         </a>
                         <a href="#">
                             <div class="marseille-case">
@@ -237,7 +235,7 @@
             </div>
 
             <div>
-                <h1>Activités à Marseille</h1>
+                <h1 id="activities">Activités à Marseille</h1>
                 <div>
 
                     <div>
@@ -271,7 +269,7 @@
                     <h3>Nos hébérgements</h3>
                     <a>Charte qualité</a>
                     <a>Proposer votre hôtel</a>
-    
+
                 </div>
                 <div>
                     <h3>Assistance</h3>
