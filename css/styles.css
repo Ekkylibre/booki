@@ -169,7 +169,47 @@ form .btn-research {
 .headline {
   display: flex;
   flex-direction: column;
-  line-height: 0px;
+}
+
+/*Section Group*/
+.offer-main .hotels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 33px;
+}
+.offer-main .marseille-case {
+  width: 250.33px;
+  height: 207.25px;
+  background: white;
+  border-radius: 20px;
+  border: 5px solid transparent;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1803921569);
+  overflow: hidden;
+}
+.offer-main .marseille-case .hostingMainCardGradeIcon {
+  color: #0065FC;
+}
+.offer-main .marseille-case .hostingMainCardGradeIconEmpty {
+  color: #F2F2F2;
+}
+.offer-main .marseille-case .case-text {
+  line-height: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.offer-main .marseille-case-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55%;
+}
+.offer-main .marseille-case-img-host {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
@@ -222,6 +262,8 @@ a {
 .hebergements-and-populaires {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
+  margin-top: 35px;
 }
 
 .hebergements-and-populaires section {
