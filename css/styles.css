@@ -1,0 +1,354 @@
+@charset "UTF-8";
+/****** General ***********/
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+/*couleurs*/
+:root {
+  --main-color: #0065FC;
+  --main-bg-color: #F2F2F2;
+  --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+  color: var(--main-color);
+}
+
+/*navbar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .logo {
+  height: 19px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.navbar .navbar-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 68px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar .navbar-links #home {
+  color: #0065FC;
+  position: relative;
+}
+.navbar .navbar-links #home:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 25px;
+  background-color: #0065FC;
+}
+.navbar .navbar-links #activity {
+  text-decoration: none;
+  position: relative;
+}
+.navbar .navbar-links #activity:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 25px;
+  background-color: #0065FC;
+  transform: scaleX(0);
+}
+.navbar .navbar-links #activity:hover:before {
+  transform: scaleX(1);
+}
+
+/*Section Group*/
+form {
+  display: flex;
+}
+form .icon-localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 0px 0px 15px;
+  border: 1px solid #D9D9D9;
+  background-color: #D9D9D9;
+  height: 50px;
+  width: 50px;
+}
+form .icon-localisation i {
+  font-size: 20px;
+}
+form .input-research {
+  height: auto;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  border-left: 0;
+  border-right: 0;
+  width: 195px;
+}
+form .input-research::-moz-placeholder {
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+form .input-research::placeholder {
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+form .btn-research {
+  border-radius: 0px 15px 15px 0px;
+  border: 1px;
+  color: white;
+  background-color: #0065FC;
+  cursor: pointer;
+  font-weight: 700px;
+  font-size: 16px;
+  width: 132px;
+}
+
+.filtres {
+  display: flex;
+  gap: 15px;
+}
+.filtres ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+}
+.filtres ul li .icon-filter {
+  color: #0065FC;
+  font-size: 20px;
+  padding-right: 10px;
+}
+.filtres ul li button {
+  border-radius: 25px;
+  padding: 4px 19px 4px 19px;
+  border: 2px solid #D9D9D9;
+  background-color: white;
+  height: 50px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.filtres ul li button:hover {
+  background-color: #DEEBFF;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+.info .icon-i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D9D9D9;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  width: 3px;
+  height: 3px;
+}
+.info .fas {
+  color: #0065FC;
+  font-size: 12px;
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/*Section Group*/
+.offer-main .hotels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 33px;
+}
+.offer-main .marseille-case {
+  width: 250.33px;
+  height: 207.25px;
+  background: white;
+  border-radius: 20px;
+  border: 5px solid transparent;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1803921569);
+  overflow: hidden;
+}
+.offer-main .marseille-case .hostingMainCardGradeIcon {
+  color: #0065FC;
+}
+.offer-main .marseille-case .hostingMainCardGradeIconEmpty {
+  color: #F2F2F2;
+}
+.offer-main .marseille-case .case-text {
+  line-height: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.offer-main .marseille-case-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55%;
+}
+.offer-main .marseille-case-img-host {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 16px;
+}
+
+.euro {
+  font-weight: 700;
+}
+
+.neutral-star {
+  color: var(--main-bg-color);
+}
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 35px;
+}
+
+.hebergements-and-populaires section {
+  background-color: var(--main-bg-color);
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/****** Hebergements ***********/
+.hebergements {
+  width: 65%;
+}
+
+/****** Populaires ***********/
+.populaires {
+  width: 32%;
+}
+
+.populaires-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.populaires-cards .card {
+  display: flex;
+  margin-top: 33px;
+}
+
+.populaires-cards img {
+  width: 33%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+  width: 67%;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.populaires-cards .card-title {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+  margin: 0;
+}
+
+.populaires-cards .card-rating {
+  margin-bottom: 5px;
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+  .hebergements-and-populaires {
+    flex-direction: column;
+  }
+  .hebergements {
+    width: 100%;
+  }
+  .populaires {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .populaires-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .populaires-cards a {
+    width: 30%;
+  }
+  .populaires-cards .card-title {
+    font-size: 14px;
+  }
+  .populaires-cards .card-subtitle {
+    font-size: 13px;
+  }
+}
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* ... */
+}
+/*# sourceMappingURL=styles.css.map */
