@@ -3,13 +3,12 @@
 /****** General ***********/
 * {
     font-family: "Raleway", sans-serif;
-    text-decoration: none;
 }
 
 /*couleurs*/
 $bleu: #0065FC;
 $bleuClair: #DEEBFF;
-$gris: #F2F2F2;
+$gris: #D9D9D9;
 $grisClair: #F2F2F2;
 
 :root {
@@ -45,7 +44,6 @@ $grisClair: #F2F2F2;
 
         #home {
             color: $bleu;
-            text-decoration: none;
             position: relative;
 
             &:before {
@@ -79,6 +77,123 @@ $grisClair: #F2F2F2;
     }
 }
 
+/*Section Group*/
+form {
+    display: flex;
+
+    .icon-localisation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px 0px 0px 15px;
+        border: 1px solid $gris;
+        background-color: $gris;
+        height: 50px;
+        width: 50px;
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+    .input-research {
+        height: auto;
+        border-top: 1px solid $gris;
+        border-bottom: 1px solid $gris;
+        border-left: 0;
+        border-right: 0;
+        width: 195px;
+
+        &::placeholder {
+            color: black;
+            text-align: center;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+
+    .btn-research {
+        border-radius: 0px 15px 15px 0px;
+        border: 1px;
+        color: white;
+        background-color: $bleu;
+        cursor: pointer;
+        font-weight: 700px;
+        font-size: 16px;
+        width: 132px;
+    }
+}
+
+.filtres {
+    display: flex;
+    gap: 15px;
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 15px;
+
+        li {
+            .icon-filter {
+                color: $bleu;
+                font-size: 20px;
+                padding-right: 10px;
+                
+            }
+
+            button {
+                border-radius: 25px;
+                padding: 4px 19px 4px 19px;
+                border: 2px solid $gris;
+                background-color: white;
+                height: 50px;
+                font-size: 17px;
+                font-weight: bold;
+
+                &:hover {
+                    background-color: $bleuClair;
+                }
+            }
+        }
+    }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+
+    .icon-i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $gris;
+        border-radius: 50%;
+        padding: 10px;
+        margin-right: 10px;
+        width: 3px;
+        height: 3px;
+    }
+
+    .fas {
+        color: $bleu;
+        font-size: 12px;
+      }
+}
+
+.info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+}
 
 body {
     display: flex;

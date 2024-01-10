@@ -2,7 +2,6 @@
 /****** General ***********/
 * {
   font-family: "Raleway", sans-serif;
-  text-decoration: none;
 }
 
 /*couleurs*/
@@ -36,7 +35,6 @@
 }
 .navbar .navbar-links #home {
   color: #0065FC;
-  text-decoration: none;
   position: relative;
 }
 .navbar .navbar-links #home:before {
@@ -62,6 +60,116 @@
 }
 .navbar .navbar-links #activity:hover:before {
   transform: scaleX(1);
+}
+
+/*Section Group*/
+form {
+  display: flex;
+}
+form .icon-localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 0px 0px 15px;
+  border: 1px solid #D9D9D9;
+  background-color: #D9D9D9;
+  height: 50px;
+  width: 50px;
+}
+form .icon-localisation i {
+  font-size: 20px;
+}
+form .input-research {
+  height: auto;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  border-left: 0;
+  border-right: 0;
+  width: 195px;
+}
+form .input-research::-moz-placeholder {
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+form .input-research::placeholder {
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+form .btn-research {
+  border-radius: 0px 15px 15px 0px;
+  border: 1px;
+  color: white;
+  background-color: #0065FC;
+  cursor: pointer;
+  font-weight: 700px;
+  font-size: 16px;
+  width: 132px;
+}
+
+.filtres {
+  display: flex;
+  gap: 15px;
+}
+.filtres ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+}
+.filtres ul li .icon-filter {
+  color: #0065FC;
+  font-size: 20px;
+  padding-right: 10px;
+}
+.filtres ul li button {
+  border-radius: 25px;
+  padding: 4px 19px 4px 19px;
+  border: 2px solid #D9D9D9;
+  background-color: white;
+  height: 50px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.filtres ul li button:hover {
+  background-color: #DEEBFF;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+.info .icon-i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #D9D9D9;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  width: 3px;
+  height: 3px;
+}
+.info .fas {
+  color: #0065FC;
+  font-size: 12px;
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  line-height: 0px;
 }
 
 body {
