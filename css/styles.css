@@ -166,11 +166,6 @@ form .btn-research {
   gap: 35px;
 }
 
-.headline {
-  display: flex;
-  flex-direction: column;
-}
-
 /*Section Group*/
 .offer-main .hotels {
   display: grid;
