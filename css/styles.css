@@ -110,11 +110,17 @@ form .btn-research {
   width: 132px;
 }
 
-.filtres {
+.small-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.filtres-bar {
   display: flex;
   gap: 15px;
+  font-size: 18px;
 }
-.filtres ul {
+.filtres-bar ul {
   display: flex;
   align-items: center;
   list-style: none;
@@ -122,12 +128,12 @@ form .btn-research {
   margin: 0;
   gap: 15px;
 }
-.filtres ul li .icon-filter {
+.filtres-bar ul li .icon-filter {
   color: #0065FC;
   font-size: 20px;
   padding-right: 10px;
 }
-.filtres ul li button {
+.filtres-bar ul li button {
   border-radius: 25px;
   padding: 4px 19px 4px 19px;
   border: 2px solid #D9D9D9;
@@ -136,7 +142,7 @@ form .btn-research {
   font-size: 17px;
   font-weight: bold;
 }
-.filtres ul li button:hover {
+.filtres-bar ul li button:hover {
   background-color: #DEEBFF;
 }
 
@@ -325,9 +331,8 @@ a {
 /*Activités à Marseille*/
 .section-activities {
   margin-top: 35px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .section-activities .activities-container {
   display: grid;
