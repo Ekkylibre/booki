@@ -388,6 +388,24 @@ a {
     }
 }
 
+.footer-section {
+    display: flex;
+    background-color: $grisClair;
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        width: 446.67px;
+        height: 163px;
+
+        h3 {
+            line-height: 0;
+        }
+    }
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
