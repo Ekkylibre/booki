@@ -19,6 +19,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 .navbar .logo {
   height: 19px;
@@ -41,8 +42,8 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
-  bottom: 25px;
+  height: 1px;
+  bottom: 28px;
   background-color: #0065FC;
 }
 .navbar .navbar-links #activity {
@@ -112,7 +113,6 @@ form .btn-research {
 
 .small-title {
   font-size: 18px;
-  margin: 0;
 }
 
 .filtres-bar {
@@ -199,6 +199,9 @@ form .btn-research {
   padding-left: 15px;
   padding-right: 15px;
 }
+.offer-main .marseille-case .case-text .hotel-name {
+  font-size: 16px;
+}
 .offer-main .marseille-case-img {
   display: flex;
   justify-content: center;
@@ -210,6 +213,9 @@ form .btn-research {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.offer-main .small-title {
+  margin-top: 30px;
 }
 
 body {
@@ -301,7 +307,7 @@ a {
 
 .populaires-cards img {
   width: 33%;
-  height: 136px;
+  height: 146px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -369,7 +375,7 @@ a {
   width: 446.67px;
   height: 163px;
 }
-.footer-section .footer-container h3 {
+.footer-section .footer-container h1 {
   line-height: 0;
 }
 
