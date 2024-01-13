@@ -404,7 +404,8 @@ a {
 }
 
 .footer-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background-color: $grisClair;
 
     .footer-container {
@@ -412,8 +413,6 @@ a {
         flex-direction: column;
         gap: 15px;
         padding: 20px;
-        width: 446.67px;
-        height: 163px;
 
         h1 {
             line-height: 0;
@@ -424,7 +423,50 @@ a {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+
+    .main-container {
+        .container {
+            .hebergements-and-populaires {
+                .offer-main {
+                    h2 {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+            .info-group {
+                .filtres-bar {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                p {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+
+    .section-activities {
+        padding: 30px;
+        margin-top: 0px;
+
+        .activities-container {
+            padding-left: 0;
+            padding-right: 0;
+
+            .activity {
+                width: 100%;
+                height: 270px;
+
+                .activity-img {
+                    width: 100%;
+                    height: 75%;
+                }
+            }
+        }
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -435,13 +477,16 @@ a {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        .card {
+            margin-top: 20px;
+        }
     }
 
     .populaires-cards a {
@@ -458,8 +503,7 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media (max-width: 768px) {
 }
 
 /*# sourceMappingURL=style.css.map */
