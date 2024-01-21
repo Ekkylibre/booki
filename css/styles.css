@@ -94,6 +94,8 @@ form .btn-research {
 
 .small-title {
   font-size: 18px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .filtres-bar {
@@ -268,6 +270,9 @@ a {
   justify-content: center;
   gap: 40px;
 }
+.hebergements-and-populaires .accommodation {
+  width: 70%;
+}
 
 .hebergements-and-populaires section {
   background-color: var(--main-bg-color);
@@ -398,6 +403,9 @@ a {
   }
   .hebergements-and-populaires {
     flex-direction: column;
+  }
+  .hebergements-and-populaires .accommodation {
+    width: auto;
   }
   .hebergements {
     width: 100%;

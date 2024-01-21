@@ -110,6 +110,8 @@ form {
 
 .small-title {
     font-size: 18px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .filtres-bar {
@@ -307,6 +309,10 @@ a {
     display: flex;
     justify-content: center;
     gap: 40px;
+
+    .accommodation {
+        width: 70%;
+    }
 }
 
 .hebergements-and-populaires section {
@@ -460,6 +466,10 @@ a {
 
     .hebergements-and-populaires {
         flex-direction: column;
+        
+        .accommodation {
+            width: auto;
+        }
     }
 
     .hebergements {
