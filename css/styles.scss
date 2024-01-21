@@ -41,37 +41,21 @@ $grisClair: #F2F2F2;
         list-style: none;
         margin: 0;
         padding: 0;
+        padding-top: 14px;
 
         #home {
-            color: $bleu;
-            position: relative;
-
-            &:before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                bottom: 28px;
-                background-color: $bleu;
-                transform: scaleX(1.5);
+            &:hover {
+                color: $bleu;
+                border-top: 2px solid $bleu;
+                padding-top: 13px;
             }
         }
 
         #activity {
-            position: relative;
-
-            &:before {
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                bottom: 28px;
-                background-color: $bleu;
-                transform: scaleX(1.5);
-            }
-
-            &:hover:before {
-                transform: scaleX(1.5);
+            &:hover {
+                color: $bleu;
+                border-top: 2px solid $bleu;
+                padding-top: 13px;
             }
         }
     }
@@ -89,8 +73,8 @@ form {
         border-radius: 15px 0px 0px 15px;
         border: 1px solid $gris;
         background-color: $gris;
-        height: 50px;
-        width: 50px;
+        height: 49px;
+        width: 49px;
 
         i {
             font-size: 20px;
@@ -133,6 +117,10 @@ form {
     gap: 15px;
     font-size: 18px;
 
+    .filtres-title {
+        font-weight: bold;
+    }
+
     ul {
         display: flex;
         align-items: center;
@@ -157,6 +145,9 @@ form {
                 height: 50px;
                 font-size: 17px;
                 font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 &:hover {
                     background-color: $bleuClair;
@@ -210,9 +201,7 @@ form {
     }
 
     .marseille-case {
-
         height: 207.25px;
-        width: 250.33px;
         background: white;
         border-radius: 20px;
         border: 5px solid transparent;
@@ -267,12 +256,15 @@ body {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
-    box-sizing: border-box;
 
     .container {
         display: flex;
         flex-direction: column;
         gap: 35px;
+    }
+
+    hr {
+        display: none;
     }
 }
 
@@ -427,7 +419,6 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (max-width: 1024px) {
-
     .main-container {
         .container {
             .hebergements-and-populaires {
@@ -504,8 +495,17 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 768px) {
+
     .main-container {
         padding: 0;
+
+        hr {
+            display: block;
+            position: static;
+            border: 1px solid $gris;
+            width: 100%;
+            margin-top: 15px;
+        }
 
         .container {
             .info-group {
@@ -514,21 +514,44 @@ a {
 
                 form {
                     display: flex;
+                    width: 92.5vw;
+
+                    .btn-research {
+                        display: none;
+                    }
+    
+                    #icon-glass {
+                        display: inline-block;
+                        color: white;
+                        background-color: $bleu;
+                        border: none;
+                        border-radius: 15px;
+                        width: 49px;
+                        height: 49px;
+                        font-size: 16px;
+                        padding: 16px;
+                        transform: translateX(-30%);
+                    }
+
+                    .icon-localisation {
+                        height: auto;
+                    }
+
+                    .input-research {
+                        &::placeholder {
+                          font-size: 18px;
+                          text-indent: -20px;
+                        }
+                      }
                 }
 
-                .btn-research {
-                    display: none;
+                #p-title {
+                    margin-top: 8px;
+                    margin-bottom: 0;
                 }
 
-                #icon-glass {
-                    display: inline-block;
-                    color: white;
-                    background-color: $bleu;
-                    border: none;
-                    border-radius: 15px;
-                    width: 50px;
-                    height: 50px;
-                    font-size: 16px;
+                p {
+                    margin: 0;
                 }
             }
         }
@@ -540,30 +563,58 @@ a {
         align-items: center;
 
         .navbar-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            text-align: center;
             width: 100%;
-            display: flex;
-            justify-content: space-around;
+            gap: 0px;
 
             #home {
-                &:before {
-                    bottom: -15px;
-                }
-            }
-    
-            #activity {
-                &:before {
+                position: relative;
+
+                &::after {
                     content: "";
                     position: absolute;
-                    width: 100%;
+                    top: 36px;
+                    left: 50%;
+                    width: 0;
                     height: 2px;
-                    bottom: -15px;
                     background-color: $bleu;
-                    transform: scaleX(0);
+                    transform: translateX(-50%);
                 }
-    
-                &:hover:before {
-                    transform: scaleX(1);
-                
+
+                &:hover {
+                    color: $bleu;
+                    border-top: none;
+                    padding-top: 0px;
+
+                    &::after {
+                        width: 50vw;
+                    }
+                }
+            }
+
+            #activity {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 36px;
+                    left: 50%;
+                    width: 0;
+                    height: 2px;
+                    background-color: $bleu;
+                    transform: translateX(-50%);
+                }
+
+                &:hover {
+                    border-top: none;
+                    padding-top: 0px;
+
+                    &::after {
+                        width: 50vw;
+                    }
                 }
             }
         }
@@ -579,8 +630,13 @@ a {
                 button {
                     width: 100%;
                     font-size: 14px;
+                    padding: 0;
                 }
             }
+        }
+
+        .filtres-title {
+            margin: 0;
         }
     }
 
@@ -599,7 +655,6 @@ a {
             flex-direction: column;
             background-color: white;
             padding-left: 20px;
-            padding-right: 20px;
         }
     }
 
