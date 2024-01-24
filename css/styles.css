@@ -502,7 +502,7 @@ a {
   .navbar .navbar-links #home::after {
     content: "";
     position: absolute;
-    top: 36px;
+    top: 34px;
     left: 50%;
     width: 0;
     height: 2px;
@@ -523,7 +523,7 @@ a {
   .navbar .navbar-links #activity::after {
     content: "";
     position: absolute;
-    top: 36px;
+    top: 34px;
     left: 50%;
     width: 0;
     height: 2px;
